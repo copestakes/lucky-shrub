@@ -3,6 +3,7 @@
 :root {
     --primary: #2B4F4C;
     --secondary: #4A2929;
+    --secondary-alpha70: rgba(77, 41, 41, .7);
     --accent: #4E908A;
     --light-text: #E9F3F2;
     --dark-text: #282B2A;
@@ -22,6 +23,12 @@ h1 {
 h2 {
     font-size: 2rem;
     font-weight: 700;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -71,13 +78,18 @@ button {
 
 .hero-promo {
     background-color: var(--primary);
+    background-image: url(images/Asset\ 2@3x.png);
+    background-position: 0 0;
+    background-size: 50%;
+    background-repeat: no-repeat;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: center;
     padding: 2em;
 }
 
 .hero-promo > article {
-    grid-column: 2 / 3;
+    grid-column: 2 / span 1;
     color: var(--light-text);
 }
 
@@ -89,15 +101,37 @@ button {
     height: 60vh;
 }
 
+
+.call-to-action {
+    padding: 3em;
+    background: var(--secondary-alpha70);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 section {
     display: flex;
     gap: 1em;
+    margin: 1em 0;
 }
 article {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+article img {
+    display: block;
+    width: 100%;
 }
 
 footer {
+    padding: 3em;
     display: flex;
     justify-content: center;
     gap: 1em
