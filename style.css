@@ -76,12 +76,17 @@ button {
     font-size: 1em;
 }
 
+button:hover {
+    background: var(--secondary);
+}
+
 .hero-promo {
     background-color: var(--primary);
     background-image: url(images/Asset\ 2@3x.png);
     background-position: 0 0;
-    background-size: 50%;
+    background-size: 700px;
     background-repeat: no-repeat;
+    background-blend-mode: multiply;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -134,7 +139,8 @@ footer {
     padding: 3em;
     display: flex;
     justify-content: center;
-    gap: 1em
+    align-items: end;
+    gap: 1em;
 }
 
 footer > div {
@@ -145,4 +151,5 @@ footer > div {
     display: flex;
     justify-content: end;
 }
+
 
