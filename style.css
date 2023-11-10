@@ -11,6 +11,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background: var(--light-text);
     background-color: var(--light-text);
     margin: 3rem 5%;
 }
@@ -44,6 +45,10 @@ img.footer-logo-img {
     width: 50px;
 }
 
+nav {
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
 nav ul {
     list-style: none;
     text-align: center; 
@@ -58,11 +63,13 @@ nav a {
     font-weight: 700;
     text-decoration: none;
     color: var(--dark-text);
-    padding: 0 1em;
+    padding: 1em;
 }
 
 nav a:hover {
-    color: var(--accent)
+    color: var(--accent);
+    transition: all 150ms;
+    
 }
 
 button {
@@ -128,6 +135,15 @@ article {
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
+}
+
+.article-content {
+    padding: 1em;
+}
+
+.cards button {
+    display: block;
+    margin: 0 auto;
 }
 
 article img {
