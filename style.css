@@ -185,4 +185,9 @@ footer > div {
     justify-content: end;
 }
 
+@media(max-width: 600px){
+    section {
+        display: block;
+    }
+}
 
